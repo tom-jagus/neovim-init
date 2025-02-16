@@ -5,6 +5,9 @@ vim.g.maplocalleader = " "
 -- Set vim animations
 vim.g.snacks_animate = false
 
+-- Set terminal to use
+LazyVim.terminal.setup("pwsh")
+
 -- Set system clipboard sync
 -- vim.opt.clipboard = "unnamedplus"
 vim.opt.clipboard = ""
@@ -27,7 +30,7 @@ vim.o.wrap = false
 vim.o.swapfile = false
 vim.o.backup = false
 vim.o.undofile = true
-vim.o.undodir = os.getenv("UserProfile") .. "/.vim.undodir"
+vim.o.undodir = os.getenv("UserProfile") .. "/.vim/undodir"
 
 -- Set scroll margin
 vim.o.scrolloff = 10
